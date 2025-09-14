@@ -34,4 +34,4 @@ Here are some things about me:
 - Has a YouTube channel --> https://youtube.com/@SprintingSnail123
 - Insane at Brawl Stars
 
-### Thanks to Thundiverter for making the MC Quick Guide!
+### Thanks to Thundiverter for making the quickguide!
