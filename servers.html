@@ -316,6 +316,14 @@
             });
             updateServerStatus(serverAddress, statusElement);
         });
+
+        setInterval(() => {
+            buttons.forEach(button => {
+                const serverAddress = button.dataset.server;
+                const statusElement = button.querySelector('.status');
+                updateServerStatus(serverAddress, statusElement);
+            });
+        }, 60000);
     </script>
 
 </body>
