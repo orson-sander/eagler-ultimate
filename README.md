@@ -12,17 +12,14 @@ The best addons website for Eaglercraft. Constantly updated to bring you the lat
 
 ## Meet the Developers
 
-### Hey there! I'm cobblesteve.
-I started this project in April, and I wanted it to become the alternative for Eaglercrack.
+### Hey there! I'm x8r.
+I started this project in April 2024, and I wanted it to become the alternative for Eaglercrack.
 I'm making it for a website I have right now, which currently uses Eaglercrack as a source.
 
 About Me:
-- Knows HTML and CSS
-- Learning JavaScript and Python
-- Barely knows Python
-- Has a YouTube channel --> https://youtube.com/@yk4ndrew
+- Knows HTML, CSS, Javascript, Typescript, and Svelte
+- Learning Astro and Node
 - Likes to play Minecraft, Geometry Dash, A Dance of Fire and Ice (ADOFAI), and more!
-- yea :D
 
 ### Hey there! I'm SyntaxError52.
 
@@ -36,6 +33,5 @@ Here are some things about me:
 - Learning more JavaScript
 - Has a YouTube channel --> https://youtube.com/@SprintingSnail123
 - Insane at Brawl Stars
-- yea :(
 
 ### Thanks to Thundiverter for making the MC Quick Guide!
