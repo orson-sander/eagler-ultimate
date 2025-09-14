@@ -1,73 +1,98 @@
 @font-face {
-    font-family: inter-bold;
-    src: url(assets/Inter-Bold.ttf);
-}
-
-@font-face {
-    font-family: inter-semibold;
-    src: url(assets/Inter-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: inter-medium;
-    src: url(assets/Inter-Medium.ttf);
+    font-family: font;
+    src: url(assets/font.ttf);
 }
 
 h1 {
-    font-family: inter-bold;
+    font-family: font;
+}
+
+body, html {
+    background: url('/assets/panorama.png');
+    -webkit-backdrop-filter: brightness(0.9);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    backdrop-filter: blur(15px);
+}
+
+* {
+    font-family: font;
+}
+
+html {
+    filter: blur(0px);
 }
 
 body {
-    background: rgb(29, 29, 29);
-    color: white;
+    filter: blur(0px);
+    backdrop-filter: blur(50px);
 }
 
 .button {
    text-align: center;
-   border-radius: 20px;
+   border-radius: 00px;
    height: 100px;
    width: 250px;
    font-size: 25px;
-   font-family: inter-semibold;
+   font-family: font;
    color: white;
-   background-color: rgb(29, 29, 29);
-   border-color: white;
+   background-color: rgba(0,0,0,0.7);
+   border-color: rgba(255,255,255,0);
    border-width: 0.5px;
    box-shadow: none;
-   outline: none;
+   none: none;
    border-style: solid;
    cursor: pointer;
-   transition: 0.3s;
+   transition: 0.2s;
    margin: 5px;
 }
 
-button:hover {
-    background-color: rgba(116, 116, 116, 0.671);
-    scale: 105%;
+.button:hover {
+    transform: translateY(-5px);
+}
+
+a.play-hover {
+    transition: 0.2s;
+}
+
+a.play-hover:hover {
+    filter: brightness(0.8);
+}
+
+.vflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .big-button {
    text-align: center;
-   border-radius: 30px;
+   border-radius: 00px;
    height: 300px;
    width: 455px;
    font-size: 25px;
-   font-family: inter-semibold;
+   font-family: font;
    color: white;
-   background-color: rgb(29, 29, 29);
-   border-color: white;
+   background-color: rgba(0,0,0,0.7);
+   border-color: rgba(255,255,255,0);
    border-width: 0.5px;
    box-shadow: none;
-   outline: none;
+   none: none;
    border-style: solid;
    cursor: pointer;
-   transition: 0.3s;
+   transition: 0.2s;
    margin: 10px;
+}
+
+.big-button:hover {
+    transform: translateY(-5px);
 }
 
 .center-logo {
@@ -84,44 +109,45 @@ button:hover {
 li {
     display: inline;
     float: left;
-    font-family: inter-medium;
+    font-family: font;
+    vertical-align: 20px;
 }
 
 li a {
     display: block;
-    padding: 8px;
+    padding: 9px;
     text-decoration: none;
     color: white;
     text-align: center;
     font-size: 20px;
-    transition: 0.5s;
-    margin-left: 2px;
-    margin-right: 2px;
-    font-family: inter-medium;
+    transition: 0.2s;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: font;
 }
 
 li a:hover {
-    background-color: rgb(56, 56, 56);
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.233);
+    border-radius: 0px;
 
 }
 
 ul {
-    background-color: black;
+    background-color: rgba(0,0,0,0.7);
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border-radius: 10px;
-    padding-top: 5px;
-    font-family: inter-medium;
+    border-radius: 0px;
+    padding: 8px;
+    font-family: font;
     position: sticky;
     top: 1rem;
     z-index: 9999;
 }
 
 .active {
-    background-color: dodgerblue;
-    border-radius: 10px;
+    background-color: #008000;
+    border-radius: 0px;
 }
 
 .right {
@@ -130,20 +156,20 @@ ul {
 
 .innerbutton {
     text-align: center;
-    border-radius: 20px;
+    border-radius: 0px;
     height: 75px;
     width: 200px;
     font-size: 14px;
-    font-family: inter-semibold;
+    font-family: font;
     color: white;
     background-color: rgb(26, 26, 26);
-    border-color: white;
+    border-color: rgba(255,255,255,0);
     border-width: 0.5px;
     box-shadow: none;
-    outline: none;
+    none: none;
     border-style: solid;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
     margin: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +207,7 @@ ul {
     padding-left: 30px;
     padding-right: 30px;
     background-color: rgb(58, 58, 58);
-    border-radius: 10px;
+    border-radius: 0px;
     font-size: 18px;
 }
 
@@ -202,23 +228,23 @@ ul {
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: dodgerblue;
-    border-radius: 10px;
+    background-color: #008000;
+    border-radius: 0px;
     font-size: 20px;
 }
 
 .copyLink {
     text-decoration: none;
     color: white;
-    background-color: dodgerblue;
+    background-color: #008000;
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 5px;
+    border-radius: 0px;
     cursor: pointer;
     text-align: center;
-    transition: background-color 0.3s ease;
-    border-radius: 10px;
+    transition: background-color 0.2s ease;
+    border-radius: 0px;
 }
 
 .status.online span {
