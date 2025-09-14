@@ -1,258 +1,262 @@
 @font-face {
-    font-family: font;
-    src: url(assets/font.ttf);
+  font-family: font;
+  src: url(assets/font.ttf);
 }
 
 h1 {
-    font-family: font;
+  font-family: font;
 }
 
-body, html {
-    background: url('/assets/panorama.png');
-    -webkit-backdrop-filter: brightness(0.9);
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-    backdrop-filter: blur(15px);
+body,
+html {
+  background: url("/assets/panorama.png");
+  -webkit-backdrop-filter: brightness(0.9);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  backdrop-filter: blur(15px);
 }
 
 * {
-    font-family: font;
+  font-family: font;
 }
 
 html {
-    filter: blur(0px);
+  filter: blur(0px);
 }
 
 body {
-    filter: blur(0px);
-    backdrop-filter: blur(50px);
+  filter: blur(0px);
+  backdrop-filter: blur(50px);
 }
 
 .button {
-   text-align: center;
-   border-radius: 00px;
-   height: 100px;
-   width: 250px;
-   font-size: 25px;
-   font-family: font;
-   color: white;
-   background-color: rgba(0,0,0,0.7);
-   border-color: rgba(255,255,255,0);
-   border-width: 0.5px;
-   box-shadow: none;
-   none: none;
-   border-style: solid;
-   cursor: pointer;
-   transition: 0.2s;
-   margin: 5px;
+  text-align: center;
+  border-radius: 00px;
+  height: 100px;
+  width: 250px;
+  font-size: 25px;
+  font-family: font;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 0.5px;
+  box-shadow: none;
+  none: none;
+  border-style: solid;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 5px;
 }
 
 .button:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 a.play-hover {
-    transition: 0.2s;
+  transition: 0.2s;
 }
 
 a.play-hover:hover {
-    filter: brightness(0.8);
+  filter: brightness(0.8);
 }
 
 .vflex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .big-button {
-   text-align: center;
-   border-radius: 00px;
-   height: 300px;
-   width: 455px;
-   font-size: 25px;
-   font-family: font;
-   color: white;
-   background-color: rgba(0,0,0,0.7);
-   border-color: rgba(255,255,255,0);
-   border-width: 0.5px;
-   box-shadow: none;
-   none: none;
-   border-style: solid;
-   cursor: pointer;
-   transition: 0.2s;
-   margin: 10px;
+  text-align: center;
+  border-radius: 00px;
+  height: 300px;
+  width: 455px;
+  font-size: 25px;
+  font-family: font;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 0.5px;
+  box-shadow: none;
+  none: none;
+  border-style: solid;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 10px;
 }
 
 .big-button:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .center-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .top-bar {
-    scale: 50%;
-    padding: 0%;
+  scale: 50%;
+  padding: 0%;
 }
 
 li {
-    display: inline;
-    float: left;
-    font-family: font;
-    vertical-align: 20px;
+  display: inline;
+  float: left;
+  font-family: font;
+  vertical-align: 20px;
 }
 
 li a {
-    display: block;
-    padding: 9px;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    transition: 0.2s;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-family: font;
+  display: block;
+  padding: 9px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  transition: 0.2s;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: font;
 }
 
 li a:hover {
-    background-color: rgba(255, 255, 255, 0.233);
-    border-radius: 0px;
-
+  background-color: rgba(255, 255, 255, 0.233);
+  border-radius: 0px;
 }
 
 ul {
-    background-color: rgba(0,0,0,0.7);
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border-radius: 0px;
-    padding: 8px;
-    font-family: font;
-    position: sticky;
-    top: 1rem;
-    z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 0px;
+  padding: 8px;
+  font-family: font;
+  position: sticky;
+  top: 1rem;
+  z-index: 9999;
 }
 
 .active {
-    background-color: #008000;
-    border-radius: 0px;
+  background-color: #008000;
+  border-radius: 0px;
 }
 
 .right {
-    float: right;
+  float: right;
 }
 
 .innerbutton {
-    text-align: center;
-    border-radius: 0px;
-    height: 75px;
-    width: 200px;
-    font-size: 14px;
-    font-family: font;
-    color: white;
-    background-color: rgb(26, 26, 26);
-    border-color: rgba(255,255,255,0);
-    border-width: 0.5px;
-    box-shadow: none;
-    none: none;
-    border-style: solid;
-    cursor: pointer;
-    transition: 0.2s;
-    margin: 5px;
-    display: flex;
-    flex-wrap: wrap;
+  text-align: center;
+  border-radius: 0px;
+  height: 75px;
+  width: 200px;
+  font-size: 14px;
+  font-family: font;
+  color: white;
+  background-color: rgb(26, 26, 26);
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 0.5px;
+  box-shadow: none;
+  none: none;
+  border-style: solid;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .material-icons-round {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 2;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-    vertical-align: -2.5px;
-  
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
-    font-feature-settings: 'liga';
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 2;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: -2.5px;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
 }
 
 .status {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: rgb(58, 58, 58);
-    border-radius: 0px;
-    font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgb(58, 58, 58);
+  border-radius: 0px;
+  font-size: 18px;
 }
 
 .online {
-    color: lime
+  color: lime;
 }
 
 .offline {
-    color: red;
+  color: red;
 }
 
 .unknown {
-    color: goldenrod;
+  color: goldenrod;
 }
 
 .ip {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: #008000;
-    border-radius: 0px;
-    font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #008000;
+  border-radius: 0px;
+  font-size: 20px;
 }
 
 .copyLink {
-    text-decoration: none;
-    color: white;
-    background-color: #008000;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 0px;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.2s ease;
-    border-radius: 0px;
+  text-decoration: none;
+  color: white;
+  background-color: #008000;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.2s ease;
+  border-radius: 0px;
+}
+
+.copyLink:hover {
+  filter: brightness(0.8);
 }
 
 .status.online span {
-    color: green;
+  color: green;
 }
 .status.offline span {
-    color: red;
+  color: red;
 }
 .status.unknown span {
-    color: orange;
+  color: orange;
 }
