@@ -10,65 +10,82 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
     />
+    <script src="sounds.js" defer></script>
+    <script src="index.js" defer></script>
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-B23XL7G2NK"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-B23XL7G2NK");
-  </script>
   <body>
-    <ul>
-      <li>
-        <a style="margin-left: 5px" class="active" href="index.html">Home</a>
-      </li>
-      <li><a href="clients.html">Clients</a></li>
-      <li><a href="worlds.html">Worlds</a></li>
-      <li><a href="packs.html">Resource Packs</a></li>
-      <li><a href="servers.html">Servers</a></li>
-      <li><a href="skins.html">Skins</a></li>
-      <li>
-        <a href="quickguide/index.html" target="_blank">Quick Guide</a>
-      </li>
-    </ul>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-B23XL7G2NK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    <br /><br /><br /><br />
+      gtag("config", "G-B23XL7G2NK");
+    </script>
+    <style>
+      body,
+      html {
+        background: url("assets/pano.png");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: repeat-x;
+        margin: 0;
+        animation: panorama 75s linear infinite;
+      }
 
-    <div style="display: flex; justify-content: center">
+      @keyframes panorama {
+        0% {
+          background-position: 0;
+        }
+
+        100% {
+          background-position: calc(100vh / 144 * -820);
+        }
+      }
+    </style>
+    <center>
       <img
-        src="assets/icon.png"
-        style="height: 175px; margin-right: 25px"
-        alt="logo"
+        src="assets/title.png"
+        style="margin: -50px; margin-bottom: -100px; scale: auto"
+        alt="the-gay-ass-dev-who-made-us-use-a-fucking-image-made-me-do-this-shit-please-help-im-stuck-in-his-fucking-liveshare-and-in-his-basement-HELP.png"
       />
+      <p class="splash-text">
+        Contact us on our anonymous form
+        <a
+          href="https://forms.gle/Aj2pX9dXKSRJMzRT8"
+          target="_blank"
+          class="github-link"
+          style="color: yellow"
+          >here</a
+        >.
+      </p>
       <div class="vflex">
-        <h1 style="font-size: 42px; font-family: font; margin-top: 00px">
-          Eaglercraft Extras
-        </h1>
-        <p style="margin-top: -22px; text-align: left">
-          The best place for Eaglercraft related things.
-        </p>
+        <a href="clients.html" class="a">
+          <button class="button">Clients</button>
+        </a>
+        <a href="servers.html" class="a">
+          <button class="button">Servers</button>
+        </a>
+        <a href="packs.html" class="a">
+          <button class="button">Resource Packs</button>
+        </a>
+        <a href="worlds.html" class="a">
+          <button class="button" onmouseover="document.getElementById('hoversound').play()">Worlds</button>
+        </a>
+        <a href="skins.html" class="a">
+          <button disabled class="button">Skins (In Development)</button>
+        </a>
+        <a href="credits.txt" target="blank" class="a">
+          <button class="button">Credits</button>
+        </a>
       </div>
-    </div>
-
-    <br /><br />
-
-    <div class="container">
-      <button class="big-button" style="font-size: 20px; padding: 15px">
-        <b style="font-size: 30px">Announcements</b> <br /><br />The website has
-        been revamped in a Minecraft launcher style!
-      </button>
-      <button class="big-button" style="font-size: 20px; padding: 15px">
-        <b style="font-size: 30px">Need Help?</b><br /><br />Fill out an issue
-        or a discussion! We'll be sure to get back to it.
-      </button>
-    </div>
+    </center>
+    <div class="backdrop-blur"></div>
+    <video src="assets/intro.mp4" id="introVid" autoplay></video>
   </body>
 </html>

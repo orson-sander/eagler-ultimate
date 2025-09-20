@@ -1,274 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servers</title>
-    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="home.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
-    rel="stylesheet">
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B23XL7G2NK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon" />
+    <title>1.8 Servers</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <script src="sounds.js" defer></script>
+  </head>
+  <body>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-B23XL7G2NK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-B23XL7G2NK');
-</script>
-<body>
-    
-    <ul>
-        <li><a style="margin-left: 5px;" href="index.html">Home</a></li>
-        <li><a href="clients.html">Clients</a></li>
-        <li><a href="worlds.html">Worlds</a></li>
-        <li><a href="packs.html">Resource Packs</a></li>
-        <li><a class="active" href="servers.html">Servers</a></li>
-        <li><a href="skins.html">Skins</a></li>
-        <li><a href="quickguide/index.html" target="_blank">Quick Guide</a></li>
-        
-    </ul>
+      gtag("config", "G-B23XL7G2NK");
+    </script>
+    <style>
+      body,
+      html {
+        background: url("assets/pano.png");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: repeat-x;
+        margin: 0;
+        animation: panorama 75s linear infinite;
+      }
 
-    <h1 align="center" style="font-size: 54px; margin-bottom: -10px; text-decoration: none">1.8 Servers</h1>
-    <p align="center">Have fun! Thanks mcstatus.io for updating statuses. <br> <p align="center" style="font-size: 18px; font-weight: 500;">Using voicechat can leak your IP because of WebRTC issues!</p>
+      @keyframes panorama {
+        0% {
+          background-position: 0;
+        }
 
-    <br><br>
-
-    <div class="button-container">
-        <div class="container">
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="3b8d44b5-dbfb-4cf9-b4da-03d056d9f632-00-6rwn7z7ag2xt.picard.replit.dev">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Play SMP</h1>
-                <p style="font-size: 17px;">Survival, Skywars, Duels</p>
-                    <a class="status">Status: <span class="online">Online</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://3b8d44b5-dbfb-4cf9-b4da-03d056d9f632-00-6rwn7z7ag2xt.picard.replit.dev"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="zentic.cc">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Zentic</h1>
-                <p style="font-size: 17px;">Practice, Skywars, Bedwars</p>
-                    <a class="status">Status: <span class="online">Online</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="zentic.cc"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="mc.arch.lol">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">ArchMC</h1>
-                <p style="font-size: 17px;">Survival, Bedwars, KitPVP</p>
-                    <a class="status">Status: <span class="online">Online</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://mc.arch.lol"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="play.aeon-network.net">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Aeon Network</h1>
-                <p style="font-size: 17px;">Survival, Pitfall, Practice</p>
-                    <a class="status">Status: <span class="offline">Offline</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://aeon-network.net/1.8"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="legxndsmp.minecraft.pe">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">LegendSMP</h1>
-                <p style="font-size: 17px;">Survival</p>
-                    <a class="status">Status: <span class="offline">Offline</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://legxndsmp.minecraft.pe"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="helltech.cc">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Helltech</h1>
-                <p style="font-size: 17px;">GGsmp, LostSMP, Chess</p>
-                    <a class="status">Status: <span class="online">Online</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://ggsmp.net/"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="java.clever-teaching.com">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Clever</h1>
-                <p style="font-size: 17px;">Survival, Skyblock, Minigames, and more</p>
-                    <a class="status">Status: <span class="online">Online</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://clever-teaching.com/web/"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="ricejava-neutine.net">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Rice Network</h1>
-                <p style="font-size: 17px;">Crystal PVP, Duels, Survival, Minigames</p>
-                    <a class="status">Status: <span class="offline">Offline</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://ricenetwork.neutine.net/"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="asianf4rmer.minecraft.pe">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Asian SMP</h1>
-                <p style="font-size: 17px;">Survival</p>
-                    <a class="status">Status: <span class="online">Online</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://asianf4rmer.minecraft.pe"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="play.verise.xyz">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Verise Anarchy</h1>
-                <p style="font-size: 17px;">Anarchy</p>
-                    <a class="status">Status: <span class="offline">Offline</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://verise.repl.co/"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="pvpclub.xyz">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">PVP Club</h1>
-                <p style="font-size: 17px;">Survival, PVP, Crystal FFA</p>
-                    <a class="status">Status: <span class="offline">Offline</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://play.pvpclub.xyz"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="intelle.cloud/">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Rosalia</h1>
-                <p style="font-size: 17px;">Survival, Slime Fun</p>
-                    <a class="status">Status: <span class="unknown">Unknown</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://intelle.cloud/soccer"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="java.craftclue.rocks">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Craftclue</h1>
-                <p style="font-size: 17px;">Anarchy</p>
-                    <a class="status">Status: <span class="online">Online</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://play.craftclue.rocks"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="mc.asspixel.net">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">A--Pixel</h1>
-                <p style="font-size: 17px;">Minigames</p>
-                    <a class="status">Status: <span class="offline">Offline</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://mc.asspixel.net"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="reading-gs.q13x.com">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">q13x</h1>
-                <p style="font-size: 17px;">Anarchy</p>
-                    <a class="status">Status: <span class="offline">Offline</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://reading-gs.q13x.com"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="sus.shhnowisnottheti.me">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Creacraft</h1>
-                <p style="font-size: 17px;">Survival, Admin, Creative</p>
-                    <a class="status">Status: <span class="unknown">Unknown</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://sus.shhnowisnottheti.me"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="ep.rufan.tech">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Time Legacy (IP 1)</h1>
-                <p style="font-size: 17px;">Skyblock</p>
-                    <a class="status">Status: <span class="online">Online</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://ep.rufan.tech"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="ep.rufan.tech">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Time Legacy (IP 2)</h1>
-                <p style="font-size: 17px;">Skyblock</p>
-                    <a class="status">Status: <span class="online">Online</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://mc.time-legacy.net"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="x.mess.eu.org/">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Messcraft</h1>
-                <p style="font-size: 17px;">Survival</p>
-                    <a class="status">Status: <span class="offline">Offline</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://x.mess.eu.org/"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="mcus1.dxomg.link">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Dxomg Proxy</h1>
-                <p style="font-size: 17px;">Proxy for cracked Java servers</p>
-                    <a class="status">Status: <span class="offline">Offline</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://mcus1.dxomg.link"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="mc.gmod9.com">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Gmod9 Anarchy</h1>
-                <p style="font-size: 17px;">Anarchy</p>
-                    <a class="status">Status: <span class="unknown">Unknown</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://mc.gmod9.com/wssconnect"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="mc.zyth.me">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Zyth MC</h1>
-                <p style="font-size: 17px;">Bedwars</p>
-                    <a class="status">Status: <span class="online">Online</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://mc.zyth.me"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
-
-            <button class="button" style="height: 275px; margin-left: 10px; margin-right: 10px;" data-server="proxy.theludos.com/">
-                <h1 style="margin-bottom: -7px; margin-top: 5px; font-size: 30px;">Ludos Proxy</h1>
-                <p style="font-size: 17px;">Proxy for cracked Java servers</p>
-                    <a class="status">Status: <span class="offline">Offline</span></a>
-                    <br><br>
-                    <a class="copyLink" data-link="wss://proxy.theludos.com/"><span class="material-icons-round" style="vertical-align: -3px; scale: 110%;">
-                        content_copy
-                        </span>&nbsp;Copy IP</a>
-            </button>
+        100% {
+          background-position: calc(100vh / 144 * -820);
+        }
+      }
+    </style>
+    <center>
+      <h1
+        style="
+          font-size: xxx-large;
+          text-shadow: 2px 2px 2px black;
+          margin-bottom: 0;
+        "
+      >
+        1.8 Servers
+      </h1>
+      <p class="splash-text" style="font-size: 19px;">
+        Click any server to copy the IP and refresh the status
+        <br><br>
+        <a
+          href="/"
+          class="github-link"
+          style="color: yellow; font-size: 17px; margin-top: -10px"
+          >Back home</a
+        >
+        <br>
+      </p>
+      <div class="vflex" id="container" style="justify-content: center">
+        <!--load clients into here-->
+        <div id="cclients">
+          <li id="client" class="copyLink" data-link="wss://mc.arch.lol" data-server="mc.arch.lol/">
+            <img id="icon" src="/assets/servers/arch.png" />
+            <h1 id="title">Arch MC</h1>
+            <p id="ver"><span class="status">Loading...</span></p>
+            <p id="author" style="font-size: 18px;">Survival, Bedwars, KitPVP, Duels</p>
+          </li>
+          <li id="client" class="copyLink" data-link="wss://zentic.cc" data-server="zentic.cc">
+            <img id="icon" src="/assets/servers/zentic.png" />
+            <h1 id="title">Zentic</h1>
+            <p id="ver"><span class="status">Loading...</span></p>
+            <p id="author" style="font-size: 18px;">Practice, Skywars, Bedwars</p>
+          </li>
+          <li id="client" class="copyLink" data-link="wss://aeon-network.net/1.8" data-server="play.aeon-network.net">
+            <img id="icon" src="/assets/servers/aeon.jpg" />
+            <h1 id="title">Aeon Network</h1>
+            <p id="ver"><span class="status">Loading...</span></p>
+            <p id="author" style="font-size: 18px;">Survival, Pitfall, Practice</p>
+          </li>
+          <li id="client" class="copyLink" data-link="wss://legxndsmp.minecraft.pe" data-server="legxndsmp.minecraft.pe">
+            <img id="icon" src="/assets/eaglercraftx.jpg" />
+            <h1 id="title">LegendSMP</h1>
+            <p id="ver"><span class="status">Loading...</span></p>
+            <p id="author" style="font-size: 18px;">Survival</p>
+          </li>
+          <li id="client" class="copyLink" data-link="wss://ggsmp.net/" data-server="ggsmp.net">
+            <img id="icon" src="/assets/servers/gg.png" />
+            <h1 id="title">GG SMP</h1>
+            <p id="ver"><span class="status">Loading...</span></p>
+            <p id="author" style="font-size: 18px;">Chess</p>
+          </li>
+          <li id="client" class="copyLink" data-link="wss://clever-teaching.com/web/" data-server="java.clever-teaching.com">
+            <img id="icon" src="/assets/servers/clever.png" />
+            <h1 id="title">Clever Teaching</h1>
+            <p id="ver"><span class="status">Loading...</span></p>
+            <p id="author" style="font-size: 18px;">Survival, Skyblock, Minigames, etc.</p>
+          </li>
+          <li id="client" class="copyLink" data-link="wss://ricenetwork.neutine.net/" data-server="ricejava-neutine.net">
+            <img id="icon" src="/assets/servers/ricenetwork.png" />
+            <h1 id="title">Rice Network</h1>
+            <p id="ver"><span class="status">Loading...</span></p>
+            <p id="author" style="font-size: 18px;">CrystalPVP, Duels, Survival, Minigames</p>
+          </li>
+          <li id="client" class="copyLink" data-link="wss://play.craftclue.rocks/" data-server="java.craftclue.rocks">
+            <img id="icon" src="/assets/servers/cc.png" />
+            <h1 id="title">Craftclue</h1>
+            <p id="ver"><span class="status">Loading...</span></p>
+            <p id="author" style="font-size: 18px;">Anarchy</p>
+          </li>
+          <li id="client" class="copyLink" data-link="wss://mc.asspixel.net/" data-server="mc.asspixel.net">
+            <img id="icon" src="/assets/servers/ap.png" />
+            <h1 id="title">Asspixel</h1>
+            <p id="ver"><span class="status">Loading...</span></p>
+            <p id="author" style="font-size: 18px;">Minigames</p>
+          </li>
+          <li id="client" class="copyLink" data-link="wss://sus.shhnowisnottheti.me/" data-server="sus.shhnowisnottheti.me">
+            <img id="icon" src="/assets/eaglercraftx.jpg" />
+            <h1 id="title">Creacraft</h1>
+            <p id="ver"><span class="status">Loading...</span></p>
+            <p id="author" style="font-size: 18px;">Survival, Admin, Creative</p>
+          </li>
+          <li id="client" class="copyLink" data-link="wss://ep.rufan.tech/" data-server="ep.rufan.tech">
+            <img id="icon" src="/assets/servers/tl.png" />
+            <h1 id="title">Time Legacy</h1>
+            <p id="ver"><span class="status">Loading...</span></p>
+            <p id="author" style="font-size: 18px;">Skyblock</p>
+          </li>
+          <li id="client" class="copyLink" data-link="wss://x.mess.eu.org" data-server="x.mess.eu.org">
+            <img id="icon" src="/assets/servers/mc.png" />
+            <h1 id="title">Messcraft</h1>
+            <p id="ver"><span class="status">Loading...</span></p>
+            <p id="author" style="font-size: 18px;">Survival</p>
+          </li>
+          <li id="client" class="copyLink" data-link="wss://mc.zyth.me/" data-server="mc.zyth.me">
+            <img id="icon" src="/assets/servers/zyth.png" />
+            <h1 id="title">Zyth MC</h1>
+            <p id="ver"><span class="status">Loading...</span></p>
+            <p id="author" style="font-size: 18px;">Bedwars</p>
+          </li>
         </div>
+      </div>
+    </center>
+    <div class="backdrop-blur"></div>
+
+    <div id="toast" style="position: fixed;">
+        IP Copied!
+    </div>
+    <br>
 
     <script>
+        function showToast(text) {
+            const toast = document.getElementById("toast")
+            toast.textContent = text
+
+            toast.style.right = "1%"
+            setTimeout(() => {
+                toast.style.right = "-40%"
+            }, 3000)
+        }
+
         function copyToClipboard(text) {
             const tempInput = document.createElement('input');
             tempInput.value = text;
@@ -277,7 +178,7 @@
             tempInput.setSelectionRange(0, 99999);
             document.execCommand('copy');
             document.body.removeChild(tempInput);
-            alert('IP Copied!');
+            showToast("IP Copied!")
         }
 
         document.querySelectorAll('.copyLink').forEach(link => {
@@ -302,13 +203,13 @@
             })
             .catch(error => {
                 console.error('Error fetching server status:', error);
-                statusElement.innerHTML = `Status: <span class="unknown">Unknown</span>`;
+                statusElement.innerHTML = `<span class="unknown">Failed to fetch data</span>`;
             });
         }
 
-        const buttons = document.querySelectorAll('.button');
+        const sbuttons = document.querySelectorAll('#client');
 
-        buttons.forEach(button => {
+        sbuttons.forEach(button => {
             const serverAddress = button.dataset.server;
             const statusElement = button.querySelector('.status');
             button.addEventListener('click', () => {
@@ -318,13 +219,12 @@
         }); 
 
         setInterval(() => {
-            buttons.forEach(button => {
+            sbuttons.forEach(button => {
                 const serverAddress = button.dataset.server;
                 const statusElement = button.querySelector('.status');
                 updateServerStatus(serverAddress, statusElement);
             });
-        }, 60000);
+        }, 5000);
     </script>
-
-</body>
+  </body>
 </html>

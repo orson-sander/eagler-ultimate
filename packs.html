@@ -3,270 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resource Packs</title>
-    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="home.css" />
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon" />
+    <title>Resource Packs</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
     />
+    <script src="sounds.js" defer></script>
+    <script src="packs.js" defer></script>
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-B23XL7G2NK"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-B23XL7G2NK");
-  </script>
   <body>
-    <ul>
-      <li><a style="margin-left: 5px" href="index.html">Home</a></li>
-      <li><a href="clients.html">Clients</a></li>
-      <li><a href="worlds.html">Worlds</a></li>
-      <li><a class="active" href="packs.html">Resource Packs</a></li>
-      <li><a href="servers.html">Servers</a></li>
-      <li><a href="skins.html">Skins</a></li>
-      <li>
-        <a href="quickguide/index.html" target="_blank">Quick Guide</a>
-      </li>
-    </ul>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-B23XL7G2NK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    <h1 align="center" style="font-size: 45px">Resource Packs</h1>
-    <p align="center" style="font-size: 15px; font-family: font">
-      Feel free to download any of these! Please not that I did NOT make any of
-      these packs.
-    </p>
+      gtag("config", "G-B23XL7G2NK");
+    </script>
+    <style>
+      body,
+      html {
+        background: url("assets/pano.png");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: repeat-x;
+        margin: 0;
+        animation: panorama 75s linear infinite;
+      }
 
-    <br /><br />
+      @keyframes panorama {
+        0% {
+          background-position: 0;
+        }
 
-    <div class="container">
-      <button class="button" style="height: 200px; margin: 15px; cursor: unset">
-        Blue 128x <br /><br /><a
-          class="play-hover"
-          style="
-            text-decoration: none;
-            color: white;
-            border-radius: 0px;
-            background-color: #008000;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 15px;
-            padding-left: 15px;
-          "
-          href="packs/! §9Blue §7Revamp §8§f128x§8.zip"
-          download="§3§lBlue 128x §6[Eaglercraft]"
-          ><span
-            class="material-icons-round"
-            style="vertical-align: -3.5px; scale: 125%"
-            >file_download</span
-          >&nbsp;Download</a
-        ></button
-      ><br />
-      <button class="button" style="height: 200px; margin: 15px; cursor: unset">
-        Nebula 16x <br /><br /><a
-          class="play-hover"
-          style="
-            text-decoration: none;
-            color: white;
-            border-radius: 0px;
-            background-color: #008000;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 15px;
-            padding-left: 15px;
-          "
-          href="packs/!      §bnebu§3l§ba §8[§f16§5x§8].zip"
-          download="§5§lNebula 16x §6[Eaglercraft]"
-          ><span
-            class="material-icons-round"
-            style="vertical-align: -3.5px; scale: 125%"
-            >file_download</span
-          >&nbsp;Download</a
-        ></button
-      ><br />
-      <button class="button" style="height: 200px; margin: 15px; cursor: unset">
-        Nicofruit 16x <br /><br /><a
-          class="play-hover"
-          style="
-            text-decoration: none;
-            color: white;
-            border-radius: 0px;
-            background-color: #008000;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 15px;
-            padding-left: 15px;
-          "
-          href="packs/!    §bNico§3Fruit §f[16x] (1).zip"
-          download="§3§lNicoFruit 16x §6[Eaglercraft]"
-          ><span
-            class="material-icons-round"
-            style="vertical-align: -3.5px; scale: 125%"
-            >file_download</span
-          >&nbsp;Download</a
-        ></button
-      ><br />
-      <button class="button" style="height: 200px; margin: 15px; cursor: unset">
-        Bombie's 180k 16x <br /><br /><a
-          class="play-hover"
-          style="
-            text-decoration: none;
-            color: white;
-            border-radius: 0px;
-            background-color: #008000;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 15px;
-            padding-left: 15px;
-          "
-          href="packs/!         §b§lBombies §8[§f180k§8].zip"
-          download="§2§lBombie's 180k 16x §6[Eaglercraft]"
-          ><span
-            class="material-icons-round"
-            style="vertical-align: -3.5px; scale: 125%"
-            >file_download</span
-          >&nbsp;Download</a
-        ></button
-      ><br />
-      <button class="button" style="height: 200px; margin: 15px; cursor: unset">
-        Lunar 16x <br /><br /><a
-          class="play-hover"
-          style="
-            text-decoration: none;
-            color: white;
-            border-radius: 0px;
-            background-color: #008000;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 15px;
-            padding-left: 15px;
-          "
-          href="packs/!       Lunar [§816x§f].zip"
-          download="§lLunar 16x §6[Eaglercraft]"
-          ><span
-            class="material-icons-round"
-            style="vertical-align: -3.5px; scale: 125%"
-            >file_download</span
-          >&nbsp;Download</a
-        ></button
-      ><br />
-      <button class="button" style="height: 200px; margin: 15px; cursor: unset">
-        Fatcat 16x <br /><br /><a
-          class="play-hover"
-          style="
-            text-decoration: none;
-            color: white;
-            border-radius: 0px;
-            background-color: #008000;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 15px;
-            padding-left: 15px;
-          "
-          href="packs/!     §bfat cat §f[§b16§7x§f].zip"
-          download="§3§NicoFruit 16x §6[Eaglercraft]"
-          ><span
-            class="material-icons-round"
-            style="vertical-align: -3.5px; scale: 125%"
-            >file_download</span
-          >&nbsp;Download</a
-        ></button
-      ><br />
-      <button class="button" style="height: 200px; margin: 15px; cursor: unset">
-        Toxica 16x <br /><br /><a
-          class="play-hover"
-          style="
-            text-decoration: none;
-            color: white;
-            border-radius: 0px;
-            background-color: #008000;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 15px;
-            padding-left: 15px;
-          "
-          href="packs/!                 §5tóxica §816x.zip"
-          download="§d§Toxica16x §6[Eaglercraft]"
-          ><span
-            class="material-icons-round"
-            style="vertical-align: -3.5px; scale: 125%"
-            >file_download</span
-          >&nbsp;Download</a
-        ></button
-      ><br />
-      <button class="button" style="height: 200px; margin: 15px; cursor: unset">
-        XLEXXD v3 16x <br /><br /><a
-          class="play-hover"
-          style="
-            text-decoration: none;
-            color: white;
-            border-radius: 0px;
-            background-color: #008000;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 15px;
-            padding-left: 15px;
-          "
-          href="packs/!  §bxlexxd v3 §8[§f16x§8].zip"
-          download="§3XLEXXD v3 16x §6[Eaglercraft]"
-          ><span
-            class="material-icons-round"
-            style="vertical-align: -3.5px; scale: 125%"
-            >file_download</span
-          >&nbsp;Download</a
-        ></button
-      ><br />
-      <button class="button" style="height: 200px; margin: 15px; cursor: unset">
-        Dynamic Duo 32x <br /><br /><a
-          class="play-hover"
-          style="
-            text-decoration: none;
-            color: white;
-            border-radius: 0px;
-            background-color: #008000;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 15px;
-            padding-left: 15px;
-          "
-          href="packs/! §bDynamic §7Duo §8Revamp §8[§732x§8].zip"
-          download="§2§lDynamic Duo §6[Eaglercraft]"
-          ><span
-            class="material-icons-round"
-            style="vertical-align: -3.5px; scale: 125%"
-            >file_download</span
-          >&nbsp;Download</a
-        ></button
-      ><br />
-      <button class="button" style="height: 200px; margin: 15px; cursor: unset">
-        Nebula 32x <br /><br /><a
-          class="play-hover"
-          style="
-            text-decoration: none;
-            color: white;
-            border-radius: 0px;
-            background-color: #008000;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 15px;
-            padding-left: 15px;
-          "
-          href="packs/!      §bnebu§3l§ba §8[§f32§5x§8].zip"
-          download="§5Nebula 32x §6[Eaglercraft]"
-          ><span
-            class="material-icons-round"
-            style="vertical-align: -3.5px; scale: 125%"
-            >file_download</span
-          >&nbsp;Download</a
-        ></button
-      ><br />
+        100% {
+          background-position: calc(100vh / 144 * -820);
+        }
+      }
+    </style>
+    <center>
+      <h1 style="font-size: xxx-large; text-shadow: 2px 2px 2px black; margin-bottom: 0;">Resource Packs</h1>
+      <p class="splash-text">
+        <a
+          href="/"
+          class="github-link"
+          style="color: yellow; font-size: 17px; margin-top: -10px;"
+          >Back home</a
+        >
+      </p>
+      <div class="vflex" id="container" style="justify-content: center;">
+      <!--load clients into here-->
+      <div id="cclients">
+        <ul id="clients">
+          
+        </ul>
+      </div>
     </div>
+    </center>
+    <div class="backdrop-blur"></div>
   </body>
 </html>

@@ -1,56 +1,58 @@
 @font-face {
-  font-family: font;
-  src: url(assets/font.ttf);
+  font-family: mc;
+  src: url('assets/Minecraft.woff2');
 }
 
 h1 {
-  font-family: font;
+  font-family: mc;
+}
+
+a {
+  cursor: default;
 }
 
 body,
 html {
-  background: url("/assets/panorama.png");
-  -webkit-backdrop-filter: brightness(0.9);
+  background: url("/assets/dirt.webp");
   background-size: cover;
   background-attachment: fixed;
   color: white;
-  backdrop-filter: blur(15px);
+  overflow-x: hidden;
 }
 
 * {
-  font-family: font;
-}
-
-html {
-  filter: blur(0px);
+  font-family: mc;
+  font-weight: normal;
+  cursor: normal
 }
 
 body {
-  filter: blur(0px);
-  backdrop-filter: blur(50px);
+  margin: 0;
 }
 
 .button {
-  text-align: center;
-  border-radius: 00px;
-  height: 100px;
-  width: 250px;
-  font-size: 25px;
-  font-family: font;
+  background: url('/assets/btn-minecraft.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  width: 400px;
+	  height: 40px;
+    margin: 7px;
+  padding: 10px 0;
+  scale: 120%;
   color: white;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-color: rgba(255, 255, 255, 0);
-  border-width: 0.5px;
-  box-shadow: none;
-  none: none;
-  border-style: solid;
-  cursor: pointer;
-  transition: 0.2s;
-  margin: 5px;
+  font-size: 17px;
+  text-align: center;
+  text-shadow: 1px 1px black;
 }
 
 .button:hover {
-  transform: translateY(-5px);
+  background: url('/assets/btn-minecraft-hover.png');
+  color: yellow;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  filter: grayscale(0%);
 }
 
 a.play-hover {
@@ -65,6 +67,8 @@ a.play-hover:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .container {
@@ -79,7 +83,7 @@ a.play-hover:hover {
   height: 300px;
   width: 455px;
   font-size: 25px;
-  font-family: font;
+  font-family: mc;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
   border-color: rgba(255, 255, 255, 0);
@@ -110,7 +114,7 @@ a.play-hover:hover {
 li {
   display: inline;
   float: left;
-  font-family: font;
+  font-family: mc;
   vertical-align: 20px;
 }
 
@@ -124,12 +128,13 @@ li a {
   transition: 0.2s;
   margin-left: 5px;
   margin-right: 5px;
-  font-family: font;
+  font-family: mc;
 }
 
 li a:hover {
   background-color: rgba(255, 255, 255, 0.233);
   border-radius: 0px;
+  z-index: 9999999;
 }
 
 ul {
@@ -139,10 +144,10 @@ ul {
   overflow: hidden;
   border-radius: 0px;
   padding: 8px;
-  font-family: font;
+  font-family: mc;
   position: sticky;
   top: 1rem;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .active {
@@ -160,7 +165,7 @@ ul {
   height: 75px;
   width: 200px;
   font-size: 14px;
-  font-family: font;
+  font-family: mc;
   color: white;
   background-color: rgb(26, 26, 26);
   border-color: rgba(255, 255, 255, 0);
@@ -204,11 +209,9 @@ ul {
 .status {
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: rgb(58, 58, 58);
   border-radius: 0px;
   font-size: 18px;
+  text-align: left;
 }
 
 .online {
@@ -241,14 +244,8 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 0px;
-  cursor: pointer;
   text-align: center;
-  transition: 0.2s ease;
   border-radius: 0px;
-}
-
-.copyLink:hover {
-  filter: brightness(0.8);
 }
 
 .status.online span {
@@ -259,4 +256,128 @@ ul {
 }
 .status.unknown span {
   color: orange;
+}
+
+#clients {
+  align-items: center;
+  z-index: 0;
+  background: none;
+}
+
+#client {
+  background: rgba(0, 0, 0, 0.0);
+  width: 70vw;
+  height: 15vh;
+  padding: 10px;
+  margin: 5px;
+  z-index: 1;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+}
+
+#client img {
+  position: relative;
+  height: 99%;
+  left: -42.5%;
+  aspect-ratio: 1/1;
+}
+
+#client h1 {
+  position: relative;
+  top: -100%;
+  left: 17%;
+  font-size: 22px;
+  font-weight: normal;
+  text-align: left;
+}
+
+#client p {
+  position: relative;
+  top: -110%;
+  left: 17%;
+  font-size: 20px;
+  font-weight: normal;
+  color: lightgray;
+  text-align: left;
+}
+
+.github-link {
+  color: white;
+}
+
+#playbtn {
+  position: relative;
+  left: .2%;
+  scale: 30%;
+  bottom: 500%;
+  background: rgba(0, 0, 0, 0.444);
+  display: none;
+  cursor: pointer;
+}
+
+#client a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: none;
+}
+
+#client:hover {
+  outline: #f0f0f0 solid 3px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.splash-text {
+  color: yellow;
+  text-shadow: 2px 2px 4px black;
+  font-size: 1.4em;
+  font: 600;
+}
+
+#toast {
+  background: rgba(0, 0, 0, 0.616);
+  color: white;
+  height: 20px;
+  width: 200px;
+  position: fixed;
+  right: -40%;
+  top: 2%;
+  padding: 20px 30px;
+  outline: 3px white solid;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  transition: 0.5s cubic-bezier(0.215, 0.610, 0.610, 1);
+}
+
+li > * {
+  pointer-events: none;
+}
+
+button:disabled {
+  filter: brightness(0.77);
+}
+
+button:disabled:hover {
+  filter: brightness(0.77);
+  background: url("assets/btn-minecraft.png");
+  color: white;
+}
+
+#introVid {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transition: 0.3s;
+  background: white;
+  transform: translateX(-50%);
 }
