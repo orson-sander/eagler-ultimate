@@ -1,7 +1,7 @@
 [
   {
     "name": "EaglercraftX",
-    "version": "u51",
+    "version": "u53",
     "url": "/clients/1.8/eaglercraftx.html",
     "icon": "/assets/eaglercraftx.jpg",
     "author": "lax1dude, ayunami2000"
@@ -29,15 +29,15 @@
   },
   {
     "name": "DragonX Lite",
-    "version": "Unknown",
-    "url": "/clients/1.8/dragonxlite.html",
+    "version": "4.0",
+    "url": "/clients/1.8/DragonXLite.html",
     "icon": "/assets/eaglercraftx.jpg",
     "author": "averycoolusername"
   },
   {
     "name": "DragonX",
     "version": "4.0",
-    "url": "/clients/1.8/dragonx_v4.html",
+    "url": "/clients/1.8/DragonX_V4.html",
     "icon": "/assets/eaglercraftx.jpg",
     "author": "3TERN4LF1R3"
   }
