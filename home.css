@@ -34,7 +34,7 @@ body {
   margin: 0;
 }
 
-p, h1, h2 {
+h1, h2, p {
   text-shadow: 2px 2px 2px black;
 }
 
@@ -397,4 +397,10 @@ button:disabled:hover {
   transition: 0.3s;
   background: white;
   transform: translateX(-50%);
+  border: none;
+  outline: none;
+}
+
+#opening {
+  text-shadow: 2px 2px 2px transparent;
 }
