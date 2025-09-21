@@ -28,10 +28,10 @@ Here are some things about me:
 - Learning JavaScript
 - Barely knows JavaScript
 
-### Hey there! I'm SprintingSnail69
+### Hey there! I'm SprintingSnail69.
 - Knows HTML, CSS, and a little JavaScript
 - Learning more JavaScript
-- Has a YouTube channel --> https://youtube.com/@SprintingSnail123
-- Insane at Brawl Stars
+- Has a YouTube channel --> https://youtube.com/@SprintingSnailBS
+- Insane at Brawl Stars, Clash Royale, and Clash of Clans
 
 ### Thanks to Thundiverter for making the quickguide!
