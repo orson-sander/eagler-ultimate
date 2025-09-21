@@ -2,12 +2,14 @@ const vid = document.getElementById("introVid");
 const p = document.getElementById("opening")
 console.debug(vid)
 p.style.display = "block";
+const menuMusic = new Audio("/assets/menu2.ogg")
 
 const seen = sessionStorage.getItem("seenVid")
 
 if (seen !== "true") {
     document.addEventListener("click", () => {
       vid.play();
+      menuMusic.play()
       p.style.display = "none";
     });
 

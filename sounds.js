@@ -14,7 +14,7 @@ var hoverSound = new Audio("/assets/hover.ogg");
 var clickSound = new Audio("/assets/click.ogg");
 
 buttons.forEach((button) => {
-  button.addEventListener("mouseover", () => {
+  button.addEventListener("mouseenter", () => {
     const sound = hoverSound.cloneNode(true);
       sound.play();
       console.debug("played")
