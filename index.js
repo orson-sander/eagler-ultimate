@@ -9,7 +9,6 @@ const seen = sessionStorage.getItem("seenVid")
 if (seen !== "true") {
     document.addEventListener("click", () => {
       vid.play();
-      menuMusic.play()
       p.style.display = "none";
     });
 
