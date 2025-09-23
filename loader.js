@@ -67,9 +67,9 @@ function loadClients(v) {
     });
 }
 
-if (window.location.href.includes("1.8.html")) {
+if (window.location.href.includes("1.8")) {
     loadClients("1.8");
-} else if (window.location.href.includes("1.5.html")) {
+} else if (window.location.href.includes("1.5")) {
     loadClients("1.5");
 } else {
     loadClients("1.3");
